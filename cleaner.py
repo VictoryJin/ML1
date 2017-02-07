@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from nltk import SnowballStemmer
 from nltk.corpus import stopwords
 import string as st
@@ -44,7 +43,7 @@ def rmpunctuation(string):
 
 #cleans the data
 def clean(hrc_data, remove):
-    hrc_copy = hrc_data.copy()
+    hrc_copy = hdrc_data.copy()
     for i in range(len(hrc_copy)):
         #truncates string before "subjects:", "sent:", "re:", and "fw:" to display only the latest content
         newtext = truncStrings(hrc_copy.loc[i, "text"], "subject:", 0)
