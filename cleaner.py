@@ -35,7 +35,7 @@ def stopstem(string):
     wordlist = [snow.stem(i) for i in wordlist]
     return ' '.join(wordlist)
 
-#removes unnecessary punctuation
+#removes unnecessary punctuation & additional strings
 def rmpunctuation(string):
     string = re.sub(r'\\', "", string)
     string = re.sub(r'-', ' ', string)
@@ -43,7 +43,7 @@ def rmpunctuation(string):
 
 #cleans the data
 def clean(hrc_data, remove):
-    hrc_copy = hdrc_data.copy()
+    hrc_copy = hrc_data.copy()
     for i in range(len(hrc_copy)):
         #truncates string before "subjects:", "sent:", "re:", and "fw:" to display only the latest content
         newtext = truncStrings(hrc_copy.loc[i, "text"], "subject:", 0)
@@ -55,8 +55,12 @@ def clean(hrc_data, remove):
         #removes stop words and unifies stemmed words
         newtext = stopstem(newtext)
         newtext = rmpunctuation(newtext)
+        #removes additional words after cleaning
+        newtext = re.sub("comm state ..........", "", newtext)
         hrc_copy.loc[i, "text"] = newtext
     return hrc_copy
 
 
-new = clean(hrc_train, badstrings)
+if __name__ == '__main__':
+    new = clean(hrc_train, badstrings)
+    new.to_csv("./data/HRC_cleaned.tsv", sep = "\t", header = False, index = False)
