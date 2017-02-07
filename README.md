@@ -7,7 +7,7 @@ Some improvements I hope to achieve are but not limited to:
 * Increase test data accuracy
 * Clean and optimize codes <br />
 
-The files are explained as follows: <br />
+The files are as follows: <br />
 1. cleaner.py = cleans the strings with stop/stem words, universal strings, and punctuations(finished) and outputs the cleaned indexed file when run. *Do NOT need to run again if HRC_clean.tsv is in ./data/* <br />
 2. data_explorers.py = code for myself to explore the data and identify patterns <br />
 3. data_explorers.ipiynb = same as data_explorers.py, but for Jupyter notebook. <br />
