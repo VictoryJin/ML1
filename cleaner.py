@@ -9,7 +9,7 @@ hrc_train = pd.read_csv("./data/HRC_train.tsv", sep = "\t", names = ["id", "text
 
 
 badstrings = ["unclassified u.s. department of state", "case no. ............",
-                "doc no. c........", "date: ..........","state dept. . produced to house select benghazi comm.",
+                "doc no. c........", "date: ..........","state dept. . produced to house select",
                 "subject to agreement on sensitive information & redactions.","no foia waiver state...........",
                 "no foia waiver.",  "unclassified us department of state"]
 
