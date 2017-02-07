@@ -5,4 +5,4 @@ Machine Learning to predict email contacts <br />
    // Do NOT need to run again if HRC_clean.tsv is in ./data/ <br />
 2) data_explorers.py = code for myself to explore the data and identify patterns <br />
 3) data_explorers.ipiynb = same as data_explorers.py, but for Jupyter notebook. <br />
-Improved versions of SVM, RF, and K-means algorithms coming soon!
+**Improved versions of SVM, RF, and K-means algorithms coming soon!**
