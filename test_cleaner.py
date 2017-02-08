@@ -4,10 +4,7 @@ from nltk.corpus import stopwords
 import string as st
 import re
 
-hrc_test = pd.read_csv("./data/HRC_test_prediction.tsv", sep = "\t", names = ["id"])
-hrc_test_text = pd.read_csv("./data/HRC_test.tsv", sep = "\t", names = ["text"])
-hrc_test.loc[:, "text"] = hrc_test_text
-
+hrc_test = pd.read_csv("./data/HRC_test.tsv", sep = "\t", names = ["id"])
 
 badstrings = ["unclassified u.s. department of state", "case no. ............",
                 "doc no. c........", "date: ..........","state dept. . produced to house select",
