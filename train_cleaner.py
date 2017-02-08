@@ -55,8 +55,6 @@ def clean(hrc_data, remove):
         #removes stop words and unifies stemmed words
         newtext = stopstem(newtext)
         newtext = rmpunctuation(newtext)
-        #removes additional words after cleaning
-        newtext = re.sub("comm state ..........", "", newtext)
         hrc_copy.loc[i, "text"] = newtext
     return hrc_copy
 

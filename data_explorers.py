@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+
+
 hrc_train = pd.read_csv("./data/HRC_train.tsv", sep = "\t", names = ["id", "text"])
 len(hrc_train)
 
