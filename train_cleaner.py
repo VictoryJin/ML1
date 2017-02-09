@@ -4,18 +4,17 @@ from nltk.corpus import stopwords
 import string as st
 import re
 
-hrc_train = pd.read_csv("./data/HRC_train.tsv", sep = "\t", names = ["id", "text"])
+snow = SnowballStemmer('english')
+stop = set(stopwords.words('english'))
 
+hrc_train = pd.read_csv("./data/HRC_train.tsv", sep = "\t", names = ["id", "text"])
 
 badstrings = ["unclassified u.s. department of state", "case no. ............",
                 "doc no. c........", "date: ..........","state dept. . produced to house select",
                 "subject to agreement on sensitive information & redactions.","no foia waiver state...........",
                 "no foia waiver.",  "unclassified us department of state"]
 
-snow = SnowballStemmer('english')
-stop = set(stopwords.words('english'))
-
-#spits out a 'cleaned' text indexed after the location of a string, if there's any.
+#truncates the string before the final occurance of a word in a string, if any.
 def truncStrings(text, string, index):
     try:
         j = text.index(str(string))
@@ -58,7 +57,7 @@ def clean(hrc_data, remove):
         hrc_copy.loc[i, "text"] = newtext
     return hrc_copy
 
-
+#outputs the file when run
 if __name__ == '__main__':
     new = clean(hrc_train, badstrings)
     new.to_csv("./data/HRC_cleaned.tsv", sep = "\t", header = False, index = False)
