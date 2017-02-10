@@ -3,7 +3,7 @@ Machine Learning to predict email contacts. <br />
 This is my improved version (from scratch) of what was a term-project with a group of 4 in a ML class. <br />
 The goal of this project is to fully understand for myself the ML technique, concepts and implementations. <br />
 Some improvements I hope to achieve are but not limited to:
-* Increase test data accuracy (compared to 80% accuracy for the group project)
+* Increase test data accuracy (compared to 70% accuracy for the group project)
 * Clean and optimize codes for readabilty<br />
 
 The files are as follows: <br />
