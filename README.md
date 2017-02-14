@@ -54,12 +54,12 @@ conda install matplotlib seaborn
 ```
 ## Project
 ### Introduction
-**Machine Learning to predict email contacts for the once controversial HRC emails.**
-This is my improved version (from scratch) of what was a term-project with a group of 4 in a ML class in UC Berkeley.  The link to the original project can be found [here](https://github.com/liyu1390/STAT154-GROUP08).
-The goal of this project is to identify the right parameters and 'power features' to correctly identify the senders of 389 emails by training from 3505 emails.
+**Machine Learning to predict email contacts for the once controversial HRC emails.**  
+This is my improved version (from scratch) of what was a term-project with a group of 4 in a ML class in UC Berkeley.  The link to the original project can be found [here](https://github.com/liyu1390/STAT154-GROUP08).  
+The goal of this project is to identify the right parameters and 'power features' to correctly identify the senders of 389 emails by training from 3505 emails.  
 My aims for this project is to fully understand for myself the ML technique, concepts and implementations.
 Some improvements I hope to achieve are but not limited to:
-<<<<<<< HEAD
+
 * Increase test data accuracy (compared to 74% accuracy for the group project).
 * Clean and optimize codes for readabilty.
 * Visualize the results using *matplotlib* and *seaborn*.
@@ -104,4 +104,4 @@ The files are as follows: <br />
 2. data_explorers.py = code for myself to explore the data and identify patterns <br />
 3. data_explorers.ipiynb = same as data_explorers.py, but for Jupyter notebook. <br />
 **Currently coding for Naive Bayes & SVM for text classification**
->>>>>>> 63b950a6b393e231b9dd47c424cb92cdbb47be75
+
