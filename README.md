@@ -94,4 +94,5 @@ and remove "bad strings" that are used for every email.
 [sklearn - Preprocessing](http://scikit-learn.org/stable/supervised_learning.html#supervised-learning)  
 [sklearn - Supervised Learning](http://scikit-learn.org/stable/supervised_learning.html#supervised-learning)  
 [sklearn - Clustering](http://scikit-learn.org/stable/modules/clustering.html#clustering)  
+[Udacity.com](http://www.udacity.com)
 
