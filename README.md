@@ -3,7 +3,7 @@
 ### Contents
 
 [Building the Package](#bulding-the-package)  
-[Project](#project)
+[Project Info](#project-info)
 
 
 
@@ -52,7 +52,7 @@ conda install scikit-learn
 ```
 conda install matplotlib seaborn
 ```
-## Project
+## Project Info
 ### Introduction
 **Machine Learning to predict email contacts for the once controversial HRC emails.**  
 This is my improved version (from scratch) of what was a term-project with a group of 4 in a ML class in UC Berkeley.  The link to the original project can be found [here](https://github.com/liyu1390/STAT154-GROUP08).  
