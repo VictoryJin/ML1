@@ -22,7 +22,7 @@ X_test_dtm = v.transform(X_test.values.astype('U'))
 #fit and predict wrt NB
 y_pred_class = nb.fit(X_train_dtm, y_train).predict(X_test_dtm)
 
-#print results
+#print result
 print("Model had", X_train_dtm.shape[1], "number of features, with", X_train_dtm.shape[0],
       "train observations and", X_test_dtm.shape[0], "test observations.")
 print("The accuracy of the model onto the test set was", metrics.accuracy_score(y_test, y_pred_class))
