@@ -57,7 +57,7 @@ def clean(hrc_data, remove):
         hrc_copy.loc[i, "text"] = newtext
     return hrc_copy
 
-
+#outputs the cleaned data when executed
 if __name__ == '__main__':
     new = clean(hrc_test, badstrings)
     new.to_csv("./data/HRC_test_cleaned.tsv", sep = "\t", header = False, index = False)
