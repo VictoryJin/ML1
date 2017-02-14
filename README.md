@@ -59,6 +59,7 @@ This is my improved version (from scratch) of what was a term-project with a gro
 The goal of this project is to identify the right parameters and 'power features' to correctly identify the senders of 389 emails by training from 3505 emails.
 My aims for this project is to fully understand for myself the ML technique, concepts and implementations.
 Some improvements I hope to achieve are but not limited to:
+<<<<<<< HEAD
 * Increase test data accuracy (compared to 74% accuracy for the group project).
 * Clean and optimize codes for readabilty.
 * Visualize the results using *matplotlib* and *seaborn*.
@@ -94,3 +95,13 @@ and remove "bad strings" that are used for every email.
 [sklearn - Supervised Learning](http://scikit-learn.org/stable/supervised_learning.html#supervised-learning)  
 [sklearn - Clustering](http://scikit-learn.org/stable/modules/clustering.html#clustering)  
 
+=======
+* Increase test data accuracy (compared to 70% accuracy for the group project)
+* Clean and optimize codes for readabilty<br />
+
+The files are as follows: <br />
+1. cleaner.py = cleans the strings with stop/stem words, universal strings, and punctuations(finished) and outputs the cleaned indexed file when run. *Do NOT need to run again if HRC_clean.tsv is in ./data/* <br />
+2. data_explorers.py = code for myself to explore the data and identify patterns <br />
+3. data_explorers.ipiynb = same as data_explorers.py, but for Jupyter notebook. <br />
+**Currently coding for Naive Bayes & SVM for text classification**
+>>>>>>> 63b950a6b393e231b9dd47c424cb92cdbb47be75
