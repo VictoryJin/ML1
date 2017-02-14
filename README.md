@@ -8,7 +8,7 @@
 
 
 ## Building the Package
-I would provide two ways to set up packages, both which require the latest version of [Python3](https://www.python.org/downloads/) and  [Anaconda](https://www.continuum.io/downloads). You can either choose to install python packages individually, or use the predefined virtual environment provided in the files.
+I would suggest two ways to set up packages, both which require the latest version of [Python3](https://www.python.org/downloads/) and  [Anaconda](https://www.continuum.io/downloads). You can either choose to install python packages individually, or use the predefined virtual environment provided in the files.
 
 
 ### Predefined Environment
