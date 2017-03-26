@@ -17,7 +17,7 @@ def getSVMEst(c):
     return svm.LinearSVC(C = c)
 
 #retrives the best margin value 'c' for the data, and plot the data
-def getBestSVMParam(data, labels, cmin = 1, cmax = 200):
+def getBestSVMParam(data, labels, cmin = 150, cmax = 300):
     minCV = float('inf')
     minParam = 0
     costs = []
