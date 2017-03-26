@@ -10,6 +10,7 @@ print("WARNING: running LDA with dimension reduction would take some time.\n"
       "Check if the shrinkage = 'none' to save time. \n"
       "otherwise I'd recommend a good RAM and CPU, or AWS :)")
 
+
 v = CountVectorizer()
 lda = LinearDiscriminantAnalysis(solver = "svd")
 

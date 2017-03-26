@@ -7,8 +7,10 @@ import re
 snow = SnowballStemmer('english')
 stop = set(stopwords.words('english'))
 
+#imports training data
 hrc_train = pd.read_csv("./data/HRC_train.tsv", sep = "\t", names = ["id", "text"])
 
+#classifies bad strings for removal
 badstrings = ["unclassified u.s. department of state", "case no. ............",
                 "doc no. c........", "date: ..........","state dept. . produced to house select",
                 "subject to agreement on sensitive information & redactions.","no foia waiver state...........",

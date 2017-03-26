@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+from sklearn import datasets
 
 
 hrc_train = pd.read_csv("./data/HRC_train.tsv", sep = "\t", names = ["id", "text"])
@@ -33,3 +33,4 @@ for i in range(len(hrc_train)):
     ind[i] = identify(hrc_train.loc[i, "text"], "subject:", 0)
 print(len([i for i, j in enumerate(ind) if j == 0]))
 # TODO: test hrc_train cleaning method
+iris = datasets.load_iris()
