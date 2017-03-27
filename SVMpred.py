@@ -17,7 +17,7 @@ def getSVMEst(c):
     return svm.LinearSVC(C = c)
 
 #retrives the best margin value 'c' for the data, and plot the data
-def getBestSVMParam(data, labels, cmin = 150, cmax = 300):
+def getBestSVMParam(data, labels, cmin = 200, cmax = 300):
     minCV = float('inf')
     minParam = 0
     costs = []
@@ -52,8 +52,11 @@ X_train_dtm = v.fit_transform(X_train.values.astype('U'))
 X_test_dtm = v.transform(X_test.values.astype('U'))
 
 bestparam = getBestSVMParam(X_train_dtm, label)
-print(bestparam)
+bestparam = 270
+
+
 
 #print accuracy
-# y_pred_class = clf.fit(X_train_dtm, y_train).predict(X_test_dtm)
-# print("accuracy was ", metrics.accuracy_score(y_test, y_pred_class))
+clf = svm.LinearSVC()
+y_pred_class = clf.fit(X_train_dtm, y_train).predict(X_test_dtm)
+print("accuracy was ", metrics.accuracy_score(y_test, y_pred_class))
