@@ -85,7 +85,7 @@ and remove "bad strings" that are used for every email.
 *Do NOT need to run again if HRC_clean.tsv is in ./data/*
 * data_explorers.py = code for myself to explore the data and identify patterns.
 * data_explorers.ipiynb = same as data_explorers.py, but for Jupyter notebook.
-* LDA.py = outputs the prediction accuracy using Linear Discriminant Analysis with singular value decomposition.  
+* LDA.py = outputs the prediction accuracy using Linear Discriminant Analysis with singular value decomposition. This analysis is not reliable since p > n, and as shown [here](http://scikit-learn.org/stable/auto_examples/classification/plot_lda.html), larger ratio of features vs. samples tends to produce inaccurate results.   
 *WARNING: the current code takes up excessive memory, and can terminate the process if the computer has low memory*
 * SVMpred.py = outputs the prediction accuracy using SVM
 * NBpred.py = outputs the prediction accuracy using Naive Bayes.
