@@ -80,14 +80,14 @@ and remove "bad strings" that are used for every email.
 
 
 ### Files
-**Currently coding for LDA & SVM for text classification**
+
 * test_cleaner.py = cleans the strings with stop/stem words, universal strings, and punctuations(finished) and outputs the cleaned indexed file when run.  
 *Do NOT need to run again if HRC_clean.tsv is in ./data/*
 * data_explorers.py = code for myself to explore the data and identify patterns.
 * data_explorers.ipiynb = same as data_explorers.py, but for Jupyter notebook.
 * LDA.py = outputs the prediction accuracy using Linear Discriminant Analysis with singular value decomposition.  
 *WARNING: the current code takes up excessive memory, and can terminate the process if the computer has low memory*
-* SVMpred.py = outputs the prediction accuracy using SVM (work in progress)
+* SVMpred.py = outputs the prediction accuracy using SVM
 * NBpred.py = outputs the prediction accuracy using Naive Bayes.
 
 
