@@ -4,6 +4,8 @@
 
 [Building the Package](#bulding-the-package)  
 [Project Info](#project-info)
+[Result](#result)
+[Contributers](#contributers)
 
 
 
@@ -96,3 +98,4 @@ and remove "bad strings" that are used for every email.
 [sklearn - Clustering](http://scikit-learn.org/stable/modules/clustering.html#clustering)  
 [Udacity.com](http://www.udacity.com)
 
+###
