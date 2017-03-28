@@ -3,9 +3,9 @@
 ### Contents
 
 [Building the Package](#bulding-the-package)  
-[Project Info](#project-info)
-[Result](#result)
-[Contributers](#contributers)
+[Project Info](#project-info)  
+[Result](#result)  
+[Contributors](#contributors)
 
 
 
@@ -98,4 +98,8 @@ and remove "bad strings" that are used for every email.
 [sklearn - Clustering](http://scikit-learn.org/stable/modules/clustering.html#clustering)  
 [Udacity.com](http://www.udacity.com)
 
-###
+## Result
+The final result was 82% accuracy on test data, using Linear SVC. Results can be shown by running SVMpred.py.
+
+## Contributors
+Much appreciation to my best friend Gurdit Chahal, a data scientist at LeanTaas, for advising me to include bigrams in the word frequency matrix, which boosted the accuracy by 8%.
